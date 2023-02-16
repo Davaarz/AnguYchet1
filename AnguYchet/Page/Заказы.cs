@@ -19,6 +19,8 @@ namespace AnguYchet.Page
 
 		private void Заказы_Load(object sender, EventArgs e)
 		{
+			// TODO: данная строка кода позволяет загрузить данные в таблицу "angu_ushetDataSet.Заказы". При необходимости она может быть перемещена или удалена.
+			this.заказыTableAdapter.Fill(this.angu_ushetDataSet.Заказы);
 
 		}
 	}
