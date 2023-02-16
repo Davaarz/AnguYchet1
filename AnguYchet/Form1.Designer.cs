@@ -43,7 +43,7 @@ namespace AnguYchet
 			// 
 			// button8
 			// 
-			this.button8.Location = new System.Drawing.Point(408, 248);
+			this.button8.Location = new System.Drawing.Point(354, 215);
 			this.button8.Margin = new System.Windows.Forms.Padding(2);
 			this.button8.Name = "button8";
 			this.button8.Size = new System.Drawing.Size(244, 55);
@@ -53,7 +53,7 @@ namespace AnguYchet
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(526, 193);
+			this.button1.Location = new System.Drawing.Point(472, 160);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(126, 58);
 			this.button1.TabIndex = 34;
@@ -62,7 +62,7 @@ namespace AnguYchet
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(408, 193);
+			this.button2.Location = new System.Drawing.Point(354, 160);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(125, 58);
 			this.button2.TabIndex = 31;
@@ -71,7 +71,7 @@ namespace AnguYchet
 			// 
 			// button5
 			// 
-			this.button5.Location = new System.Drawing.Point(135, 248);
+			this.button5.Location = new System.Drawing.Point(81, 215);
 			this.button5.Margin = new System.Windows.Forms.Padding(2);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(244, 55);
@@ -81,7 +81,7 @@ namespace AnguYchet
 			// 
 			// button6
 			// 
-			this.button6.Location = new System.Drawing.Point(252, 193);
+			this.button6.Location = new System.Drawing.Point(198, 160);
 			this.button6.Name = "button6";
 			this.button6.Size = new System.Drawing.Size(127, 58);
 			this.button6.TabIndex = 33;
@@ -90,7 +90,7 @@ namespace AnguYchet
 			// 
 			// button9
 			// 
-			this.button9.Location = new System.Drawing.Point(135, 193);
+			this.button9.Location = new System.Drawing.Point(81, 160);
 			this.button9.Name = "button9";
 			this.button9.Size = new System.Drawing.Size(123, 58);
 			this.button9.TabIndex = 32;
@@ -100,7 +100,7 @@ namespace AnguYchet
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(650, 11);
+			this.pictureBox1.Location = new System.Drawing.Point(517, 5);
 			this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(139, 106);
@@ -112,7 +112,7 @@ namespace AnguYchet
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.label1.Location = new System.Drawing.Point(249, 56);
+			this.label1.Location = new System.Drawing.Point(176, 77);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(301, 21);
 			this.label1.TabIndex = 29;
@@ -122,7 +122,7 @@ namespace AnguYchet
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(661, 394);
 			this.Controls.Add(this.button8);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.button2);

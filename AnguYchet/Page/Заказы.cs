@@ -16,5 +16,10 @@ namespace AnguYchet.Page
 		{
 			InitializeComponent();
 		}
+
+		private void Заказы_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
