@@ -46,18 +46,25 @@ namespace AnguYchet.Page
 			this.angu_ushetDataSet = new AnguYchet.Angu_ushetDataSet();
 			this.заказыBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.заказыTableAdapter = new AnguYchet.Angu_ushetDataSetTableAdapters.ЗаказыTableAdapter();
-			this.номерзаказаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.номерзаказчикаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.номерзаказанногоизделияDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.номерсотрудникасобирающегозаказDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.номеробслуживающегоцехаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.количествоеденицDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.планируемоевремязавершениязаказаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.стоимостьзаказаDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.label3 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label7 = new System.Windows.Forms.Label();
+			this.angumanani_ychetDataSet = new AnguYchet.Angumanani_ychetDataSet();
+			this.заказыBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+			this.заказыTableAdapter1 = new AnguYchet.Angumanani_ychetDataSetTableAdapters.ЗаказыTableAdapter();
+			this.iDOrderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.iDOfTheEmployeeCollectingTheOrderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.estimatedOrderCompletionTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.orderCostDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.iDCustomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.angu_ushetDataSet)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.angumanani_ychetDataSet)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// dataGridView1
@@ -65,15 +72,12 @@ namespace AnguYchet.Page
 			this.dataGridView1.AutoGenerateColumns = false;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.номерзаказаDataGridViewTextBoxColumn,
-            this.номерзаказчикаDataGridViewTextBoxColumn,
-            this.номерзаказанногоизделияDataGridViewTextBoxColumn,
-            this.номерсотрудникасобирающегозаказDataGridViewTextBoxColumn,
-            this.номеробслуживающегоцехаDataGridViewTextBoxColumn,
-            this.количествоеденицDataGridViewTextBoxColumn,
-            this.планируемоевремязавершениязаказаDataGridViewTextBoxColumn,
-            this.стоимостьзаказаDataGridViewTextBoxColumn});
-			this.dataGridView1.DataSource = this.заказыBindingSource;
+            this.iDOrderDataGridViewTextBoxColumn,
+            this.iDOfTheEmployeeCollectingTheOrderDataGridViewTextBoxColumn,
+            this.estimatedOrderCompletionTimeDataGridViewTextBoxColumn,
+            this.orderCostDataGridViewTextBoxColumn,
+            this.iDCustomerDataGridViewTextBoxColumn});
+			this.dataGridView1.DataSource = this.заказыBindingSource1;
 			this.dataGridView1.Location = new System.Drawing.Point(0, 103);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.Size = new System.Drawing.Size(805, 457);
@@ -173,7 +177,7 @@ namespace AnguYchet.Page
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-			this.label2.Location = new System.Drawing.Point(811, 17);
+			this.label2.Location = new System.Drawing.Point(811, 21);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(161, 20);
 			this.label2.TabIndex = 39;
@@ -193,60 +197,112 @@ namespace AnguYchet.Page
 			// 
 			this.заказыTableAdapter.ClearBeforeFill = true;
 			// 
-			// номерзаказаDataGridViewTextBoxColumn
+			// label3
 			// 
-			this.номерзаказаDataGridViewTextBoxColumn.DataPropertyName = "Номер_заказа";
-			this.номерзаказаDataGridViewTextBoxColumn.HeaderText = "Номер_заказа";
-			this.номерзаказаDataGridViewTextBoxColumn.Name = "номерзаказаDataGridViewTextBoxColumn";
-			this.номерзаказаDataGridViewTextBoxColumn.ReadOnly = true;
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label3.Location = new System.Drawing.Point(812, 68);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(131, 17);
+			this.label3.TabIndex = 40;
+			this.label3.Text = "Добавление Данных";
 			// 
-			// номерзаказчикаDataGridViewTextBoxColumn
+			// label4
 			// 
-			this.номерзаказчикаDataGridViewTextBoxColumn.DataPropertyName = "Номер_заказчика";
-			this.номерзаказчикаDataGridViewTextBoxColumn.HeaderText = "Номер_заказчика";
-			this.номерзаказчикаDataGridViewTextBoxColumn.Name = "номерзаказчикаDataGridViewTextBoxColumn";
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label4.Location = new System.Drawing.Point(812, 142);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(131, 17);
+			this.label4.TabIndex = 41;
+			this.label4.Text = "Добавление Данных";
 			// 
-			// номерзаказанногоизделияDataGridViewTextBoxColumn
+			// label5
 			// 
-			this.номерзаказанногоизделияDataGridViewTextBoxColumn.DataPropertyName = "Номер_заказанного_изделия";
-			this.номерзаказанногоизделияDataGridViewTextBoxColumn.HeaderText = "Номер_заказанного_изделия";
-			this.номерзаказанногоизделияDataGridViewTextBoxColumn.Name = "номерзаказанногоизделияDataGridViewTextBoxColumn";
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label5.Location = new System.Drawing.Point(811, 219);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(131, 17);
+			this.label5.TabIndex = 42;
+			this.label5.Text = "Добавление Данных";
 			// 
-			// номерсотрудникасобирающегозаказDataGridViewTextBoxColumn
+			// label6
 			// 
-			this.номерсотрудникасобирающегозаказDataGridViewTextBoxColumn.DataPropertyName = "Номер_сотрудника_собирающего_заказ";
-			this.номерсотрудникасобирающегозаказDataGridViewTextBoxColumn.HeaderText = "Номер_сотрудника_собирающего_заказ";
-			this.номерсотрудникасобирающегозаказDataGridViewTextBoxColumn.Name = "номерсотрудникасобирающегозаказDataGridViewTextBoxColumn";
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label6.Location = new System.Drawing.Point(812, 292);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(131, 17);
+			this.label6.TabIndex = 43;
+			this.label6.Text = "Добавление Данных";
 			// 
-			// номеробслуживающегоцехаDataGridViewTextBoxColumn
+			// label7
 			// 
-			this.номеробслуживающегоцехаDataGridViewTextBoxColumn.DataPropertyName = "Номер_обслуживающего_цеха";
-			this.номеробслуживающегоцехаDataGridViewTextBoxColumn.HeaderText = "Номер_обслуживающего_цеха";
-			this.номеробслуживающегоцехаDataGridViewTextBoxColumn.Name = "номеробслуживающегоцехаDataGridViewTextBoxColumn";
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label7.Location = new System.Drawing.Point(812, 368);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(131, 17);
+			this.label7.TabIndex = 44;
+			this.label7.Text = "Добавление Данных";
 			// 
-			// количествоеденицDataGridViewTextBoxColumn
+			// angumanani_ychetDataSet
 			// 
-			this.количествоеденицDataGridViewTextBoxColumn.DataPropertyName = "Количество_едениц";
-			this.количествоеденицDataGridViewTextBoxColumn.HeaderText = "Количество_едениц";
-			this.количествоеденицDataGridViewTextBoxColumn.Name = "количествоеденицDataGridViewTextBoxColumn";
+			this.angumanani_ychetDataSet.DataSetName = "Angumanani_ychetDataSet";
+			this.angumanani_ychetDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
-			// планируемоевремязавершениязаказаDataGridViewTextBoxColumn
+			// заказыBindingSource1
 			// 
-			this.планируемоевремязавершениязаказаDataGridViewTextBoxColumn.DataPropertyName = "Планируемое_время_завершения_заказа";
-			this.планируемоевремязавершениязаказаDataGridViewTextBoxColumn.HeaderText = "Планируемое_время_завершения_заказа";
-			this.планируемоевремязавершениязаказаDataGridViewTextBoxColumn.Name = "планируемоевремязавершениязаказаDataGridViewTextBoxColumn";
+			this.заказыBindingSource1.DataMember = "Заказы";
+			this.заказыBindingSource1.DataSource = this.angumanani_ychetDataSet;
 			// 
-			// стоимостьзаказаDataGridViewTextBoxColumn
+			// заказыTableAdapter1
 			// 
-			this.стоимостьзаказаDataGridViewTextBoxColumn.DataPropertyName = "Стоимость_заказа";
-			this.стоимостьзаказаDataGridViewTextBoxColumn.HeaderText = "Стоимость_заказа";
-			this.стоимостьзаказаDataGridViewTextBoxColumn.Name = "стоимостьзаказаDataGridViewTextBoxColumn";
+			this.заказыTableAdapter1.ClearBeforeFill = true;
+			// 
+			// iDOrderDataGridViewTextBoxColumn
+			// 
+			this.iDOrderDataGridViewTextBoxColumn.DataPropertyName = "ID order";
+			this.iDOrderDataGridViewTextBoxColumn.HeaderText = "ID order";
+			this.iDOrderDataGridViewTextBoxColumn.Name = "iDOrderDataGridViewTextBoxColumn";
+			this.iDOrderDataGridViewTextBoxColumn.ReadOnly = true;
+			// 
+			// iDOfTheEmployeeCollectingTheOrderDataGridViewTextBoxColumn
+			// 
+			this.iDOfTheEmployeeCollectingTheOrderDataGridViewTextBoxColumn.DataPropertyName = "ID of the employee collecting the order";
+			this.iDOfTheEmployeeCollectingTheOrderDataGridViewTextBoxColumn.HeaderText = "ID of the employee collecting the order";
+			this.iDOfTheEmployeeCollectingTheOrderDataGridViewTextBoxColumn.Name = "iDOfTheEmployeeCollectingTheOrderDataGridViewTextBoxColumn";
+			// 
+			// estimatedOrderCompletionTimeDataGridViewTextBoxColumn
+			// 
+			this.estimatedOrderCompletionTimeDataGridViewTextBoxColumn.DataPropertyName = "Estimated order completion time";
+			this.estimatedOrderCompletionTimeDataGridViewTextBoxColumn.HeaderText = "Estimated order completion time";
+			this.estimatedOrderCompletionTimeDataGridViewTextBoxColumn.Name = "estimatedOrderCompletionTimeDataGridViewTextBoxColumn";
+			// 
+			// orderCostDataGridViewTextBoxColumn
+			// 
+			this.orderCostDataGridViewTextBoxColumn.DataPropertyName = "Order cost";
+			this.orderCostDataGridViewTextBoxColumn.HeaderText = "Order cost";
+			this.orderCostDataGridViewTextBoxColumn.Name = "orderCostDataGridViewTextBoxColumn";
+			// 
+			// iDCustomerDataGridViewTextBoxColumn
+			// 
+			this.iDCustomerDataGridViewTextBoxColumn.DataPropertyName = "ID customer";
+			this.iDCustomerDataGridViewTextBoxColumn.HeaderText = "ID customer";
+			this.iDCustomerDataGridViewTextBoxColumn.Name = "iDCustomerDataGridViewTextBoxColumn";
 			// 
 			// Заказы
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(984, 561);
+			this.Controls.Add(this.dataGridView1);
+			this.Controls.Add(this.label7);
+			this.Controls.Add(this.label6);
+			this.Controls.Add(this.label5);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.comboBox5);
 			this.Controls.Add(this.comboBox4);
@@ -258,7 +314,6 @@ namespace AnguYchet.Page
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.splitter1);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.dataGridView1);
 			this.Name = "Заказы";
 			this.Text = " ";
 			this.Load += new System.EventHandler(this.Заказы_Load);
@@ -266,6 +321,8 @@ namespace AnguYchet.Page
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.angu_ushetDataSet)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.angumanani_ychetDataSet)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.заказыBindingSource1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -288,13 +345,18 @@ namespace AnguYchet.Page
 		private Angu_ushetDataSet angu_ushetDataSet;
 		private System.Windows.Forms.BindingSource заказыBindingSource;
 		private Angu_ushetDataSetTableAdapters.ЗаказыTableAdapter заказыTableAdapter;
-		private System.Windows.Forms.DataGridViewTextBoxColumn номерзаказаDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn номерзаказчикаDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn номерзаказанногоизделияDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn номерсотрудникасобирающегозаказDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn номеробслуживающегоцехаDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn количествоеденицDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn планируемоевремязавершениязаказаDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn стоимостьзаказаDataGridViewTextBoxColumn;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label7;
+		private Angumanani_ychetDataSet angumanani_ychetDataSet;
+		private System.Windows.Forms.BindingSource заказыBindingSource1;
+		private Angumanani_ychetDataSetTableAdapters.ЗаказыTableAdapter заказыTableAdapter1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn iDOrderDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn iDOfTheEmployeeCollectingTheOrderDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn estimatedOrderCompletionTimeDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn orderCostDataGridViewTextBoxColumn;
+		private System.Windows.Forms.DataGridViewTextBoxColumn iDCustomerDataGridViewTextBoxColumn;
 	}
 }

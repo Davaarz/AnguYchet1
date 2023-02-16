@@ -33,5 +33,16 @@ namespace AnguYchet.Properties {
                 return ((string)(this["Angu_ushetConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-TU025V5\\SQLEXPRESS02;Initial Catalog=\"Angumanani ychet\";Integ" +
+            "rated Security=True")]
+        public string Angumanani_ychetConnectionString {
+            get {
+                return ((string)(this["Angumanani_ychetConnectionString"]));
+            }
+        }
     }
 }

@@ -16,5 +16,12 @@ namespace AnguYchet
 		{
 			InitializeComponent();
 		}
+
+		private void button5_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			Page.Заказы Form1 = new Page.Заказы();
+			Form1.Show();
+		}
 	}
 }
